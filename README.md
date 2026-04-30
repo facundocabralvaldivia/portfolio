@@ -12,12 +12,12 @@ portfolio/
 ├── cv.html             # Currículum vitae
 ├── software.html       # Paquetes y proyectos open source
 ├── posts.html          # Blog posts y notas
-├── css/
-│   └── styles.css      # Estilos compartidos (paleta azul profesional)
 ├── assets/
-│   ├── profile.svg     # Foto de perfil placeholder
-│   ├── favicon.svg     # Favicon
-│   └── logos/          # Logos de afiliaciones (SVG placeholder)
+│   ├── css/
+│   │   └── styles.css  # Estilos compartidos (paleta azul profesional)
+│   ├── images/         # Foto de perfil y logos de instituciones
+│   ├── docs/           # PDFs del CV, syllabi, materiales (.zip)
+│   └── favicon.svg
 └── README.md
 ```
 
@@ -26,15 +26,15 @@ portfolio/
 Toda la información actualmente es **ficticia**. Reemplaza el contenido en cada archivo:
 
 1. **Datos personales** — busca y reemplaza `Nombre Apellido` en todos los `.html` por tu nombre real.
-2. **Foto de perfil** — sustituye `assets/profile.svg` por tu foto (recomendado: imagen cuadrada, 400×400 px o más, formatos `.jpg`, `.png` o `.webp`). Actualiza el `src` en `index.html` si cambias el nombre del archivo.
+2. **Foto de perfil** — coloca tu foto en `assets/images/profile.jpg` (recomendado: imagen cuadrada, 400×400 px o más). Actualiza el `src` en `index.html` si cambias el nombre del archivo.
 3. **Enlaces sociales** — en el `<aside class="sidebar">` de `index.html`, actualiza:
    - `mailto:tu.email@ejemplo.com`
    - `https://github.com/tu-usuario`
    - `https://linkedin.com/in/tu-usuario`
    - `https://scholar.google.com/citations?user=ID`
-4. **Logos de afiliaciones** — reemplaza los SVG en `assets/logos/` por los logos reales de tus instituciones.
+4. **Logos de afiliaciones** — coloca los archivos en `assets/images/` (mismos nombres que referencia `index.html`).
 5. **Contenido de cada página** — edita los archivos `.html` reemplazando el texto placeholder. La estructura de tarjetas, listas y secciones está lista para copiar/pegar.
-6. **Colores** — para cambiar la paleta, edita las variables CSS al inicio de `css/styles.css`:
+6. **Colores** — para cambiar la paleta, edita las variables CSS al inicio de `assets/css/styles.css`:
    ```css
    --color-accent: #1f5fb3;        /* color principal */
    --color-accent-hover: #154a8f;  /* hover */
